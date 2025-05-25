@@ -1,0 +1,3 @@
+SELECT val,
+ROW_NUMBER()OVER(ORDER BY val) AS rownum
+FROM(SELECT DISTINCT val FROM Shatu) AS subquery
